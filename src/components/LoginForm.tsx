@@ -25,7 +25,7 @@ export function LoginForm() {
         <DialogTrigger asChild className="cursor-pointer">
           <div className="flex flex-col h-[36px] items-center  text-xs justify-center ">
             <CiUser className="size-[20px]" />
-            Login
+            <span className="hidden lg:flex">Login</span>
           </div>
         </DialogTrigger>
         <DialogContent className="max-w-[480px] max-h-[493px] flex flex-col items-center bg-zinc-800  ">

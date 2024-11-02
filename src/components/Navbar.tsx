@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import Logo from "@/app/assets/Chorki_Logo.png";
 import { Button } from "@/components/ui/button";
-import { FaCrown } from "react-icons/fa";
+import { FaRegUser } from "react-icons/fa6";
 import { FiSearch } from "react-icons/fi";
 import Image from "next/image";
 import { MorePopover } from "./MorePopOver";
@@ -26,18 +26,17 @@ const links: linkProps[] = [
 const Navbar = () => {
   const pathName = usePathname();
   return (
-    <div className="flex items-center max-w-8xl  justify-between w-full mx-auto h-20 px-5 py-5 sm:px-6 lg:px-10 ">
+    <div className="flex items-center  max-w-8xl justify-between w-full h-[56px] mx-auto  px-4 lg:px-10 ">
       <div className="flex items-center">
         <Link href="/">
           <Image
-            width={85}
-            height={48}
             src={Logo}
             alt="Site-Logo"
             priority
+            className="w-[57px] h-[32px] lg:w-[85px] lg:h-[48px]"
           ></Image>
         </Link>
-        <ul className="lg:flex gap-x-8 pl-[24px] pr-[24px] ml-[16px] hidden">
+        <ul className="lg:flex hidden  gap-x-8 pl-[24px] pr-[24px] ml-[16px]">
           {links.map((link, index) => (
             <div key={index}>
               {pathName === link.href ? (
@@ -60,17 +59,18 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-      <div className="flex items-center gap-x-4 ">
+      <div className="flex items-center gap-x-1 lg:gap-x-4 ">
         <div className="flex flex-col h-[36px] items-center  text-xs justify-center">
-          <FiSearch className="size-[17px]" />
-          Search
+          <FiSearch className="size-[20px]" />
+          <span className="hidden lg:flex">Search</span>
         </div>
         <LoginForm />
         <Button
           type="submit"
-          className="bg-orange-500 text-white font-semibold  w-[125px] h-[40px]"
+          className="bg-orange-500  text-white text-xs lg:text-base font-semibold w-[97px] h-[24px] lg:w-[125px] lg:h-[40px]"
         >
-          <FaCrown /> Subscribe
+          <FaRegUser />
+          Subscribe
         </Button>
         <div>
           <MorePopover />

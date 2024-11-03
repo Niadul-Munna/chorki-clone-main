@@ -28,7 +28,7 @@ export function CarouselSize({ src, alt }: slidersProps) {
           <CarouselItem key={index} className="basis-1/2 lg:basis-1/4 relative">
             <div className="p-0">
               <Card>
-                <CardContent className="flex items-center rounded-lg overflow-hidden justify-center p-0 ">
+                <CardContent className="flex items-center rounded-lg overflow-hidden justify-center p-0  ">
                   <Image src={src} alt={alt}></Image>
                 </CardContent>
               </Card>
@@ -36,8 +36,8 @@ export function CarouselSize({ src, alt }: slidersProps) {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="absolute -left-7 h-[35px] w-[35px]" />
-      <CarouselNext className="absolute -right-7 h-[35px] w-[35px]" />
+      <CarouselPrevious className="absolute -left-1 bg-transparent/40 hover:bg-transparent/40 h-[35px] w-[35px] transition-opacity duration-300 hover:opacity-100 lg:opacity-0" />
+      <CarouselNext className="absolute -right-1 bg-transparent/40 hover:bg-transparent/40 h-[35px] w-[35px] transition-opacity duration-300 hover:opacity-100 lg:opacity-0" />
     </Carousel>
   );
 }

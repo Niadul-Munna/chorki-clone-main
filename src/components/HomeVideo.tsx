@@ -8,14 +8,14 @@ import { FiInfo, FiPlus } from "react-icons/fi";
 
 const HomeVideo = () => {
   return (
-    <div className="h-[100vh] lg:h-[60vh]  flex  lg:justify-start  items-center">
+    <div className="h-[100vh] lg:h-[60vh] flex  lg:justify-start  items-center">
       <video
         poster="https://firebasestorage.googleapis.com/v0/b/chorki-clone.appspot.com/o/thumbnails_Toofan.webp?alt=media&token=7ddb54b8-0689-4888-b518-32fc8a227d45"
         autoPlay
         muted
         loop
         src="https://firebasestorage.googleapis.com/v0/b/chorki-clone.appspot.com/o/Toofan.mp4?alt=media&token=5ae39460-617e-4ddc-a776-6ec70f6ddcf9"
-        className="w-full absolute -top-5 left-0 h-screen object-cover -z-10 brightness-[60%]"
+        className="w-full hidden lg:flex absolute -top-5 left-0 h-screen object-cover -z-10 brightness-[60%]"
       ></video>
 
       <div className="absolute w-[90%] lg:w-[385px]  translate-y-14 translate-x-1 space-y-7 ">

@@ -26,7 +26,7 @@ const links: linkProps[] = [
 const Navbar = () => {
   const pathName = usePathname();
   return (
-    <div className="flex items-center  max-w-8xl justify-between w-full h-[56px] mx-auto  px-4 lg:px-10 ">
+    <div className="flex items-center  fixed lg:backdrop-blur-md lg:bg-black/50  max-w-8xl justify-between w-full h-auto mx-auto  px-4 lg:px-10 z-40 ">
       <div className="flex items-center">
         <Link href="/">
           <Image

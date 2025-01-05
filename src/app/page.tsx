@@ -1,8 +1,10 @@
 import HomeVideo from "@/components/HomeVideo";
 import { CarouselSize } from "@/components/Slider";
-import bg from "@/app/assets/CHORKI FLICK/thumbnails_a0b5e7f8521da06d3714f5b59c329570_goplay_scooty_poster_landscape_horizontal_with_mnemonic_1200x675.webp";
+import bg from "@/app/assets/CHORKI FLICK/thumbnails_Scooty.webp";
 import poster from "@/app/assets/kasPurush.webp";
 import { CarouselAuto } from "@/components/EmblaCarousel";
+// import { Data } from "./data/autoSlider";
+// import Image from "next/image";
 
 export default function Home() {
   return (

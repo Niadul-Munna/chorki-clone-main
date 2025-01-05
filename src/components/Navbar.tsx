@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import Logo from "@/app/assets/Chorki_Logo.png";
+import Logo from "@/app/Chorki_Logo.png";
 import { Button } from "@/components/ui/button";
 import { FaRegUser } from "react-icons/fa6";
 import { FiSearch } from "react-icons/fi";
@@ -14,7 +14,6 @@ interface linkProps {
   name: string;
   href: string;
 }
-
 const links: linkProps[] = [
   { name: "Originals", href: "/originals" },
   { name: "Movies", href: "/movies" },

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Toofan from "@/app/heading_Toofan.png";
+import Toofan from "@/app/assets/heading_Toofan.png";
 import { Button } from "./ui/button";
 import { FaPlay } from "react-icons/fa";
 import { FiInfo, FiPlus } from "react-icons/fi";
@@ -32,14 +32,14 @@ const HomeVideo = () => {
           <li className="list-disc">2h 24m</li>
         </ul>
         <div className="flex items-center justify-center lg:justify-start gap-2">
-          <Button className="bg-rose-600 hover:bg-rose-500 text-white w-[160px] h-[40px]  lg:w-[193px] lg:h-[48px] text-xl font-medium">
+          <Button className="bg-rose-600 hover:bg-rose-500 text-white w-[160px] h-[40px]  lg:w-[122px] lg:h-[48px] text-xl font-medium">
             <FaPlay />
-            Watch Now
+            Play
           </Button>
-          <Button className="w-[40px] h-[40px] lg:w-[40px] lg:h-[40px] hover:bg-white/50  bg-white/40 text-white">
+          <Button className="w-[40px] h-[40px] lg:w-[48px] lg:h-[48px] hover:bg-white/50  bg-white/40 text-white">
             <FiPlus className="font-normal" />
           </Button>
-          <Button className="w-[40px] h-[40px] lg:w-[40px] lg:h-[40px] hover:bg-white/50 bg-white/40 text-white">
+          <Button className="w-[40px] h-[40px] lg:w-[48px] lg:h-[48px] hover:bg-white/50 bg-white/40 text-white">
             <FiInfo />
           </Button>
         </div>

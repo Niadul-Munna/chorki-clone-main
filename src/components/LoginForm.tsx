@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/dialog";
 import Image from "next/image";
 import { CheckboxWithText } from "./CheckBox";
-import Logo from "@/app/assets/Chorki_Logo.png";
+import Logo from "@/app/Chorki_Logo.png";
 import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { MdEmail } from "react-icons/md";

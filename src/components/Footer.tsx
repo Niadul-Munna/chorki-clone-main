@@ -24,6 +24,7 @@ const links: footerProps[] = [
   { name: "FAQ", href: "/page/faq" },
   { name: "Contact Us", href: "/page/contact-us" },
 ];
+const year = new Date();
 const Footer = () => {
   const pathName = usePathname();
   return (
@@ -65,7 +66,7 @@ const Footer = () => {
           </Button>
         </div>
       </div>
-      <ul className="grid grid-cols-2 items-center lg:flex  font-semibold justify-center text-zinc-400  gap-5 lg:gap-9 text-sm p-10   ">
+      <ul className="grid grid-cols-2 items-center lg:flex  font-semibold justify-center text-zinc-400  gap-5 lg:gap-9 text-sm p-10">
         {links.map((link, index) => (
           <div key={index}>
             {pathName === link.href ? (
@@ -83,7 +84,7 @@ const Footer = () => {
         ))}
       </ul>
       <footer className="text-center  p-9 font-medium text-zinc-500 text-sm">
-        © 2024 All Rights Reserved by Chorki.
+        &copy; {year.getFullYear()} All Rights Reserved by Chorki.
       </footer>
     </div>
   );
